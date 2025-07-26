@@ -59,9 +59,3 @@ goat_nutrition_app_final_version/
     ├── package.json          # Node.js 依賴與腳本
     ├── package-lock.json     # 鎖定 Node.js 依賴版本
     └── vite.config.js        # Vite 設定檔
-
-    cd C:\Users\7220s\OneDrive\Desktop\goat_nutrition_app_final_version\frontend
-     npm run dev
-
-    cd C:\Users\7220s\OneDrive\Desktop\goat_nutrition_app_final_version\backend
-    python run.py
