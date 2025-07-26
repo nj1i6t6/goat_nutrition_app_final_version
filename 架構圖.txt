@@ -1,0 +1,67 @@
+goat_nutrition_app_final_version/
+│
+├── backend/                  # 後端 Flask 專案
+│   ├── .venv/                # Python 虛擬環境 (不需交付)
+│   ├── app/                  # Flask 應用程式核心
+│   │   ├── routes/           # 【路由層】處理網路請求和回應
+│   │   │   ├── auth_routes.py
+│   │   │   └── api_routes.py
+│   │   ├── services/         # 【服務層】處理所有業務邏輯
+│   │   │   ├── ai_service.py
+│   │   │   ├── data_service.py
+│   │   │   ├── sheep_service.py
+│   │   │   └── user_service.py
+│   │   ├── __init__.py       # Flask App 工廠
+│   │   └── models.py         # 【數據層】資料庫模型
+│   ├── templates/            # 後端 HTML 範本 (Vue掛載點 & Excel範本)
+│   │   ├── goat_import_template.xlsx
+│   │   ├── index.html
+│   │   └── login.html
+│   ├── .env                  # 環境變數設定檔 (重要！)
+│   ├── requirements.txt      # Python 依賴列表
+│   └── run.py                # 專案啟動腳本
+│
+└── frontend/                 # 前端 Vue.js 專案
+    ├── node_modules/         # Node.js 模組 (不需交付)
+    ├── public/               # 公共靜態資源
+    │   └── goat-logo.svg
+    ├── src/                  # 前端原始碼核心
+    │   ├── assets/           # CSS 樣式
+    │   │   └── main.css
+    │   ├── components/       # 可重用的 Vue 元件
+    │   │   ├── Card.vue
+    │   │   ├── SheepModal.vue
+    │   │   └── SideNav.vue
+    │   ├── router/           # 前端路由設定
+    │   │   └── index.js
+    │   ├── services/         # 前端 API 請求服務
+    │   │   └── api.js
+    │   ├── stores/           # 全域狀態管理 (Pinia)
+    │   │   ├── auth.js
+    │   │   ├── dashboard.js
+    │   │   └── flock.js
+    │   ├── views/            # 頁面級 Vue 元件
+    │   │   ├── AppLayout.vue
+    │   │   ├── ChatView.vue
+    │   │   ├── ConsultationView.vue
+    │   │   ├── DashboardView.vue
+    │   │   ├── DataManagementView.vue
+    │   │   ├── dataManagementOptions.js
+    │   │   ├── FlockView.vue
+    │   │   ├── LoginView.vue
+    │   │   ├── NotFoundView.vue
+    │   │   └── SettingsView.vue
+    │   ├── App.vue           # Vue 根元件
+    │   └── main.js           # Vue 應用入口
+    ├── .eslintrc.cjs         # ESLint 設定檔
+    ├── .prettierrc.json      # Prettier 設定檔
+    ├── index.html            # 前端入口 HTML (Vite使用)
+    ├── package.json          # Node.js 依賴與腳本
+    ├── package-lock.json     # 鎖定 Node.js 依賴版本
+    └── vite.config.js        # Vite 設定檔
+
+    cd C:\Users\7220s\OneDrive\Desktop\goat_nutrition_app_final_version\frontend
+     npm run dev
+
+    cd C:\Users\7220s\OneDrive\Desktop\goat_nutrition_app_final_version\backend
+    python run.py
